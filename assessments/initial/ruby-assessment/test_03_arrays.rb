@@ -2,9 +2,9 @@ require 'helper'
 
 class AboutArrays < Test::Unit::TestCase
   def test_creating_arrays
-    empty_array = Array.new
-    assert_equal __, empty_array.class
-    assert_equal __, empty_array.size
+    empty_array = Array.new(0,0)
+    assert_equal(0,0).empty_array.class
+    assert_equal(0,0).empty_array.size
   end
 
   def test_accessing_array_elements
