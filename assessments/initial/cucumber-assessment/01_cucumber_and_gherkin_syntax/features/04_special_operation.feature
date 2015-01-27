@@ -3,10 +3,10 @@ Feature: Special Calculator Operations
   and arguments.
 
   Scenario Outline: Math and Physics
-    When I use the special constant <constant>
+    When I use the special constant <special_constant_name>
     Then the current value on the screen should be <value>
   Examples:
-    | constant       | value  |
+    | special_constant_name       | value  |
     | PI             | 3.1416 |
     | speed of light | 300000 |
     | speed of sound | 343    |
