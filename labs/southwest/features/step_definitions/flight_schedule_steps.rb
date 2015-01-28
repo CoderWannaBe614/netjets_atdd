@@ -1,10 +1,13 @@
+require 'page-object'
+
+include PageObject::PageFactory
+
 Then(/^I get the daily flight schedule between those cities for that day$/) do
   #Go to flight schedule page
-  on Southwest_Main do |page |
-    page.select_flight
-    page.select_flight_sched
-  end
-
+ on Southwest_Main do |page |
+   page.flights
+   page.flight_schedule
+   end
   #Enter departure date
 
   #Enter preferred time
