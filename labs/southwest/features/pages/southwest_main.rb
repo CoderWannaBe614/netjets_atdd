@@ -5,6 +5,6 @@ class Southwest_Main
  include PageObject
 
   link(:flights, :class =>'swa-header--link swa-header--plan-a-trip')
-  link(:flight_schedule, :class =>'swa-header--overlay-list-link')
+  list_item(:flight_schedule, :text => 'Flight Schedules')
 
 end
