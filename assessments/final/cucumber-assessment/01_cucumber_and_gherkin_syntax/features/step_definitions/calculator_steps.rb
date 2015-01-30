@@ -35,7 +35,7 @@ Then /^I should see the previously stored result$/ do
 end
 
 When /^I use the special constant(.*)$/ do |special_constant_constant|
-  @calc.push_special __
+  @calc.push(special_constant_constant)
 end
 
 Then /^the current value on the screen should be (.*)$/ do |output|
