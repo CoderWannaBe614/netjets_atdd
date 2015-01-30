@@ -1,9 +1,15 @@
-When(/^I select a new loan informaion$/) do
+require 'page-object'
+
+When(/^I select a new loan information$/) do
   #go to selection page
+  on Loan do |page|
+
+  end
 
   #select loan type
 
   #select button to compile
+
 end
 
 Then(/^the (.*) displays$/) do |loan_rate|

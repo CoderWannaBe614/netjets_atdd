@@ -3,7 +3,7 @@ Feature: Loan Selection
   So that I can pick a bank that has the best deal for me
 
 Scenario: New client views new loan information
-  When I select a new loan informaion
+  When I select a new loan information
   Then the loan information displays
 
 Scenario: Existing client views new loan information
